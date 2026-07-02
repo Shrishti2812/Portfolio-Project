@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <div className="min-h-screen   bg-slate-950 p-6 lg:p-16 rounded-lg">
+    <div className="min-h-screen   bg-slate-950 p-6 lg:p-16 ">
     <div className=" grid grid-cols-1   max-w-8xl bg-slate-900 p-8 rounded-lg md:grid-cols-2 gap-6 lg:gap-12 ">
     <section className="flex flex-col space-y-2 lg:space-y-4">
      <p className="text-2xl font-bold">Hi, I'm</p>
