@@ -25,7 +25,7 @@ function Skills(){
         <>
         <div className="bg-slate-950 p-6 lg:p-14   ">
             <h1 className="text-3xl md:text-6xl text-center font-bold text-gray-300 mb-4">Skills</h1>
-<p className="text-lg text-gray-200 mb-4 text-center">The technologies and tools I use to build modern and scalable
+<p className=" text-gray-400 mb-4 text-center">The technologies and tools I use to build modern and scalable
     web applications. </p>     
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 bg-slate-950 p-6 lg:px-12  mx-auto">
           <div className="bg-slate-900 p-5 rounded-lg">
@@ -140,13 +140,9 @@ function Skills(){
     <div className="bg-slate-800 p-2 rounded-2xl flex items-center justify-center gap-2">
       <SiGithub className="text-white text-2xl" />
       <p className="text-sm text-gray-300">GitHub</p>
-    </div>
-
-    
+    </div>    
   </div>
-</div>
-       
- 
+</div>     
 </div>
 </div>
 </>

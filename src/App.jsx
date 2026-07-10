@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import Hero from './components/Hero'
 import About from './components/About'
 import Skills from './components/Skills'
+import Project from './components/Project'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -14,6 +15,7 @@ function App() {
     <Hero/>
     <About/>
     <Skills/>
+    <Project/>
     <Footer/>
     </div>
     </>
