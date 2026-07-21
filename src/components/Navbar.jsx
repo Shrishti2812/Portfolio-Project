@@ -6,6 +6,8 @@ function Navbar(){
     <div className="flex justify-between space-x-10">
         <section className="hover:text-gray-400">Home</section>
         <section className="hover:text-gray-400">About</section>
+         <section className="hover:text-gray-400">Skills</section>
+          <section className="hover:text-gray-400">Projects</section>
         <section className="hover:text-gray-400">Contact</section>
     </div>
 </div>
