@@ -34,6 +34,7 @@ subtext:"linkedin.com/in/shrishti-gupta-584b82373",
   ];
   return (
     <>
+    <section id="contact">
       <div className="bg-gray-950 p-4 md:p-10">
         <div className="border-gray-400 inline-block px-2 py-1 border rounded-full"> <h1 className="text-xs text-emerald-400  ">Let's connect</h1></div>
         <div className="flex flex-col md:flex-row justify-between px-5 mt-2 mx-auto" >
@@ -128,7 +129,7 @@ subtext:"linkedin.com/in/shrishti-gupta-584b82373",
 </div>
         </div>
       </div>
-
+</section>
     </>
   )
 }

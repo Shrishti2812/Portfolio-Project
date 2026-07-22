@@ -1,6 +1,7 @@
 function About(){
     return(
         <>
+        <section id="about">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-slate-950 p-6 lg:px-12 ">
             <section className="flex flex-col justify-center">
 <h1 className="text-3xl md:text-6xl font-bold text-gray-300 mb-6">About Me</h1>
@@ -39,6 +40,7 @@ function About(){
 </div>
             </section>
         </div>
+        </section>
         </>
     )
 }

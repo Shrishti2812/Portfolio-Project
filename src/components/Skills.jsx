@@ -20,131 +20,122 @@ import {
 
 } from "react-icons/si";
 function Skills(){
-
+const skillCategories = [
+  {
+    title: "Frontend Developer",
+    description:
+      "Building responsive and interactive user interfaces using React, JavaScript, and Tailwind CSS.",
+    icon: <FaCode className="text-3xl text-white" />,
+    skills: [
+      { name: "HTML", icon: <SiHtml5 className="text-orange-400 text-2xl" /> },
+      { name: "CSS", icon: <SiCss className="text-blue-400 text-2xl" /> },
+      {
+        name: "JavaScript",
+        icon: <SiJavascript className="text-yellow-400 text-2xl" />,
+      },
+      { name: "React", icon: <SiReact className="text-blue-400 text-2xl" /> },
+      {
+        name: "Tailwind CSS",
+        icon: <SiTailwindcss className="text-sky-400 text-2xl" />,
+      },
+    ],
+  },
+  {
+    title: "Backend",
+    description:
+      "Building RESTful APIs and server-side applications using Node.js and Express.",
+    icon: <FaCode className="text-3xl text-white" />,
+    skills: [
+      {
+        name: "Node.js",
+        icon: <SiNodedotjs className="text-green-500 text-2xl" />,
+      },
+      {
+        name: "Express.js",
+        icon: <SiExpress className="text-gray-200 text-2xl" />,
+      },
+      {
+        name: "MySQL",
+        icon: <SiMysql className="text-blue-500 text-2xl" />,
+      },
+      {
+        name: "Postman",
+        icon: <SiPostman className="text-orange-500 text-2xl" />,
+      },
+    ],
+  },
+  {
+    title: "Languages & Tools",
+    description:
+      "Programming languages and development tools I use for building projects and solving problems.",
+    icon: <FaLaptopCode className="text-3xl text-white" />,
+    skills: [
+      { name: "Java", icon: <FaJava className="text-orange-500 text-2xl" /> },
+      {
+        name: "Python",
+        icon: <SiPython className="text-blue-500 text-2xl" />,
+      },
+      { name: "SQL", icon: <SiMysql className="text-blue-500 text-2xl" /> },
+      { name: "Git", icon: <SiGit className="text-orange-500 text-2xl" /> },
+      {
+        name: "GitHub",
+        icon: <SiGithub className="text-white text-2xl" />,
+      },
+    ],
+  },
+];
     return(
         <>
-        <div className="bg-slate-950 p-6 lg:p-14   ">
-            <h1 className="text-3xl md:text-6xl text-center font-bold text-gray-300 mb-4">Skills</h1>
-<p className=" text-gray-400 mb-4 text-center">The technologies and tools I use to build modern and scalable
-    web applications. </p>     
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 bg-slate-950 p-6 lg:px-12  mx-auto">
-          <div className="bg-slate-900 p-5 rounded-lg">
-  <div className="flex items-start gap-4">
-    <div className="bg-emerald-400 p-3 rounded-lg">
-      <FaCode className="text-3xl text-white" />
-    </div>
-    <div>
-      <h3 className="text-xl font-semibold text-white">
-        Frontend Developer
-      </h3>
-      <p className="text-sm text-gray-400 mt-1">
-        Building responsive and interactive user interfaces
-        using React, JavaScript, and Tailwind CSS.
-      </p></div>
+        <section id="skills">
+     <div className="bg-slate-950 p-6 lg:p-14">
+  <h1 className="text-3xl md:text-6xl text-center font-bold text-gray-300 mb-4">
+    Skills
+  </h1>
+
+  <p className="text-gray-400 text-center mb-4">
+    The technologies and tools I use to build modern and scalable web
+    applications.
+  </p>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 bg-slate-950 p-6 lg:px-12 mx-auto">
+    {skillCategories.map((category) => (
+      <div
+        key={category.title}
+        className="bg-slate-900 p-5 rounded-lg"
+      >
+        <div className="flex items-start gap-4">
+          <div className="bg-emerald-400 p-3 rounded-lg">
+            {category.icon}
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-white">
+              {category.title}
+            </h3>
+
+            <p className="text-sm text-gray-400 mt-1">
+              {category.description}
+            </p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-2 gap-4 mt-4">
+          {category.skills.map((skill) => (
+            <div
+              key={skill.name}
+              className="bg-slate-800 p-2 rounded-2xl flex items-center justify-center gap-2"
+            >
+              {skill.icon}
+              <p className="text-sm text-gray-300">
+                {skill.name}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    ))}
   </div>
-  <div className="grid grid-cols-2 grid-rows-2   gap-4 mt-4">
-     <div className="bg-slate-800 p-2 rounded-2xl text-center flex items-center justify-center gap-2">
-     <SiHtml5 className="text-orange-400 text-2xl" /> <p className="text-sm text-gray-300">HTML</p>
-    </div>
-     <div className="bg-slate-800 p-2 rounded-2xl text-center flex items-center justify-center gap-2">
-    <SiCss className="text-blue-400 text-2xl" />  <p className="text-sm text-gray-300">CSS</p>
-    </div>
-    <div className="bg-slate-800 p-2 rounded-2xl text-center flex items-center justify-center gap-2">
-      <SiJavascript className="text-yellow-400 text-2xl text-center" />  <p className="text-sm text-gray-300">JavaScript</p>
-    </div>   
-    <div className="bg-slate-800 p-2 rounded-2xl text-center flex items-center justify-center gap-2">
-     <SiReact className="text-blue-400 text-2xl" />  <p className="text-sm text-gray-300">React</p>
-    </div>
-   
-    <div className="bg-slate-800 p-2 rounded-2xl text-center flex items-center justify-center gap-2">
-    <SiTailwindcss className="text-sky-400 text-2xl" />  <p className="text-sm text-gray-300">Tailwind CSS</p>
-    </div>
-  </div>
-</div>
-            <div className="bg-slate-900 p-4 rounded-lg  ">
-  <div className="flex items-start gap-4">
-    <div className="bg-emerald-400 p-3 rounded-lg">
-      <FaCode className="text-3xl text-white" />
-    </div>
-    <div>
-      <h3 className="text-xl font-semibold text-white">
-        Backend
-      </h3>
-      <p className="text-sm text-gray-400 mt-1">
-      Building RESTful APIs and server-side applications using Node.js and Express .
-      </p></div>
-
-  </div>
-  <div className="grid grid-cols-2 gap-4 mt-4">
-  <div className="bg-slate-800 p-2 rounded-2xl flex items-center justify-center gap-2">
-    <SiNodedotjs className="text-green-500 text-2xl" />
-    <p className="text-sm text-gray-300">Node.js</p>
-  </div>
-
-  <div className="bg-slate-800 p-2 rounded-2xl flex items-center justify-center gap-2">
-    <SiExpress className="text-gray-200 text-2xl" />
-    <p className="text-sm text-gray-300">Express.js</p>
-  </div>
-
-  <div className="bg-slate-800 p-2 rounded-2xl flex items-center justify-center gap-2">
-    <SiMysql className="text-blue-500 text-2xl" />
-    <p className="text-sm text-gray-300">MySQL</p>
-  </div>
-
-  <div className="bg-slate-800 p-2 rounded-2xl flex items-center justify-center gap-2">
-    <SiPostman className="text-orange-500 text-2xl" />
-    <p className="text-sm text-gray-300">Postman</p>
-  </div>
-</div></div>
-
-        <div className="bg-slate-900 p-4 rounded-lg">
-  {/* Heading */}
-  <div className="flex items-start gap-4">
-    <div className="bg-emerald-400 p-3 rounded-lg">
-      <FaLaptopCode className="text-3xl text-white" />
-    </div>
-
-    <div>
-      <h3 className="text-xl font-semibold text-white">
-        Languages & Tools
-      </h3>
-
-      <p className="text-sm text-gray-400 mt-1">
-        Programming languages and development tools I use for building projects and solving problems.
-      </p>
-    </div>
-  </div>
-
-  {/* Skills */}
-  <div className="grid grid-cols-2 gap-4 mt-4">
-    <div className="bg-slate-800 p-2 rounded-2xl flex items-center justify-center gap-2">
-      <FaJava className="text-orange-500 text-2xl" />
-      <p className="text-sm text-gray-300">Java</p>
-    </div>
-
-    <div className="bg-slate-800 p-2 rounded-2xl flex items-center justify-center gap-2">
-      <SiPython className="text-blue-500 text-2xl" />
-      <p className="text-sm text-gray-300">Python</p>
-    </div>
-
-    <div className="bg-slate-800 p-2 rounded-2xl flex items-center justify-center gap-2">
-      <SiMysql className="text-blue-500 text-2xl" />
-      <p className="text-sm text-gray-300">SQL</p>
-    </div>
-
-    <div className="bg-slate-800 p-2 rounded-2xl flex items-center justify-center gap-2">
-      <SiGit className="text-orange-500 text-2xl" />
-      <p className="text-sm text-gray-300">Git</p>
-    </div>
-
-    <div className="bg-slate-800 p-2 rounded-2xl flex items-center justify-center gap-2">
-      <SiGithub className="text-white text-2xl" />
-      <p className="text-sm text-gray-300">GitHub</p>
-    </div>    
-  </div>
-</div>     
-</div>
-</div>
+</div></section>
 </>
     )
 }

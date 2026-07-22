@@ -27,6 +27,7 @@ function Education(){
         }
     ]
     return (
+      <section id="education">
         <div className="bg-slate-950 p-6">
             <h2 className="text-5xl font-bold text-white mb-4 text-center">Education and HighLights</h2>
           <p className=" text-gray-400 text-center">My academic background and coding journey so far.</p>
@@ -144,7 +145,7 @@ function Education(){
   </div>
 </div>
             </div>
-        
+        </section>
     );
 }
 export default Education;
