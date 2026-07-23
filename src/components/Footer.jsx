@@ -1,83 +1,78 @@
+﻿import {
+  FaEnvelope,
+  FaGithub,
+  FaLinkedin,
+  FaFileDownload,FaUser,FaTag,FaCommentDots
+} from "react-icons/fa";
 function Footer(){
+  const contacts = [
+    {
+      icon: <FaEnvelope />,
+      text: "Email",
+      subtext:"shrishtigupta2812@gmail.com",
+    link: "mailto:shrishtigupta2812@gmail.com",
+    },
+    {
+      icon: <FaGithub />,
+      text: "GitHub",
+      subtext:"github.com/Shrishti2812",
+      link: "https://github.com/Shrishti2812",
+    },
+    {
+      icon: <FaLinkedin />,
+      text: "LinkedIn",
+subtext:"linkedin.com/in/shrishti-gupta-584b82373",
+      link: "http://linkedin.com/in/shrishti-gupta-584b82373",
+    },
+     
+  ];
     return(
         <>
-         <div className="flex flex-col gap-4 p-2 md:p-4 bg-gray-900 text-white">
+     <div className="bg-slate-950 border-t border-slate-800 px-6 md:px-16 py-8">
+  <div className="grid md:grid-cols-2 gap-8 items-center">
+    <div>
+      <a href="#home" className="font-mono text-4xl font-bold">
+        <span className="text-emerald-400">&lt;</span>
+        <span className="text-white">SG</span>
+        <span className="text-emerald-400">/&gt;</span>
+      </a>
 
-  <div className="flex flex-col gap-4 md:flex-row md:justify-around md:text-left">
-
-    <div className="flex flex-col justify-center items-center md:items-start  md:gap-4">
-      <span className="font-bold text-sm sm:text-lg md:text-3xl lg:text-4xl tracking-tight text-white">
-      Shrishti Gupta
-      </span> 
+      <p className="mt-2 max-w-md text-gray-400 leading-7">
+        Turning ideas into interactive experiences through clean code.
+      </p>
     </div>
 
-    <div className="flex justify-center gap-4 md:gap-30 p-2">
+    <div className="flex justify-center md:justify-end gap-10 flex-wrap">
+      {contacts.map((item) => (
+        <a
+          key={item.text}
+          href={item.link}
+          target={item.link.startsWith("http") ? "_blank" : "_self"}
+          rel="noopener noreferrer"
+          className="group flex flex-col items-center"
+        >
+        <div className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full border-2 border-emerald-500 bg-slate-900 text-emerald-500 shadow-[0_0_18px_rgba(16,185,129,.35)] transition-all duration-300 group-hover:scale-110">
+        {item.icon}
+      </div>
 
-      <div className="flex flex-col gap-1 items-center">
-        <h2 className="text-sm md:text-lg font-semibold mt-2">
-          Quick Links
-        </h2>
-
-        <section
-          className="text-gray-300 hover:text-white transition-colors text-sm md:text-md"
-          to="/"
-        >
-          Home
-        </section>
-
-        <section
-          className="text-gray-300 hover:text-white transition-colors text-sm md:text-md"
-          to="/about"
-        >
-          About
-        </section>
-           <section    
-          className="text-gray-300 hover:text-white transition-colors text-sm md:text-md"
-          to="/contact"
-        >
-         Skills
-        </section>
-        <section    
-          className="text-gray-300 hover:text-white transition-colors text-sm md:text-md"
-          to="/contact"
-        >
-        Projects
-        </section>
-        <section    
-          className="text-gray-300 hover:text-white transition-colors text-sm md:text-md"
-          to="/contact"
-        >
-          Contact
-        </section>
-
+          <span className="mt-1 text-gray-300 group-hover:text-emerald-400 transition">
+            {item.text}
+          </span>
          
-      </div>
-
-      <div className="flex flex-col gap-1 items-center">
-        <h2 className="text-sm md:text-lg font-semibold mt-2">
-          Contact 
-        </h2>
-
-        <p className="text-gray-300 text-sm md:text-md">
-            GitHub
-        </p>
-
-        <p className="text-gray-300 text-sm md:text-md">
-         LinkedIn
-        </p>
-           <p className="text-gray-300 text-sm md:text-md">
-        shrishtigupta2812@gmail.com
-        </p>
-      </div>
-
-    
-
+        </a>
+      ))}
     </div>
   </div>
 
-  <div className="border-t border-gray-700 mt-6 pt-4 text-center text-sm text-gray-400">
-    © 2026 Shrishti Gupta
-  </div>
+  <p className="mt-6 text-center text-sm text-gray-300">
+    Thanks for visiting my portfolio! 👋
+  </p>
+
+  <div className="my-6 border-t border-slate-800" />
+
+  <p className="text-center text-sm text-gray-500">
+    © 2026 <span className="text-emerald-400">Shrishti Gupta</span>. All rights reserved.
+  </p>
 </div>
         </>
     )
