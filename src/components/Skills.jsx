@@ -86,56 +86,60 @@ const skillCategories = [
 ];
     return(
         <>
-        <section id="skills">
-     <div className="bg-slate-950 p-6 lg:p-14">
-  <h1 className="text-3xl md:text-6xl text-center font-bold text-gray-300 mb-4">
-    Skills
-  </h1>
+      <section id="skills">
+  <div className="bg-slate-950 p-7 lg:p-14">
+    <h1 className="text-3xl md:text-6xl text-center font-bold text-gray-300 mb-4">
+      Skills
+    </h1>
 
-  <p className="text-gray-400 text-center mb-4">
-    The technologies and tools I use to build modern and scalable web
-    applications.
-  </p>
+    <p className="text-gray-400 text-center mb-4">
+      The technologies and tools I use to build modern and scalable web
+      applications.
+    </p>
 
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 bg-slate-950 p-6 lg:px-12 mx-auto">
-    {skillCategories.map((category) => (
-      <div
-        key={category.title}
-        className="bg-slate-900 p-5 rounded-lg"
-      >
-        <div className="flex items-start gap-4">
-          <div className="bg-emerald-400 p-3 rounded-lg">
-            {category.icon}
-          </div>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-6 lg:px-12 mx-auto">
+      {skillCategories.map((category) => (
+        <div
+          key={category.title}
+          className="group bg-slate-900 p-6 rounded-xl border border-slate-800 transition-all duration-300 hover:-translate-y-2 hover:border-emerald-400 hover:shadow-[0_0_25px_rgba(16,185,129,0.2)]"
+        >
+          <div className="flex items-start gap-4">
+            <div className="bg-emerald-400 p-3 rounded-lg transition-all duration-300 group-hover:scale-110  ">
+              {category.icon}
+            </div>
 
-          <div>
-            <h3 className="text-xl font-semibold text-white">
-              {category.title}
-            </h3>
+            <div>
+              <h3 className="text-xl font-semibold text-white transition-colors duration-300 group-hover:text-emerald-400">
+                {category.title}
+              </h3>
 
-            <p className="text-sm text-gray-400 mt-1">
-              {category.description}
-            </p>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-2 gap-4 mt-4">
-          {category.skills.map((skill) => (
-            <div
-              key={skill.name}
-              className="bg-slate-800 p-2 rounded-2xl flex items-center justify-center gap-2"
-            >
-              {skill.icon}
-              <p className="text-sm text-gray-300">
-                {skill.name}
+              <p className="text-sm text-gray-400 mt-1">
+                {category.description}
               </p>
             </div>
-          ))}
+          </div>
+
+          <div className="grid grid-cols-2 gap-4 mt-3">
+            {category.skills.map((skill) => (
+              <div
+                key={skill.name}
+                className="group/skill bg-slate-800 p-2 rounded-xl border border-transparent flex items-center justify-center gap-2 transition-all duration-300  hover:scale-105 hover:border-emerald-400 hover:bg-slate-700 hover:shadow-[0_0_18px_rgba(16,185,129,0.25)]"
+              >
+                <span className="transition-transform duration-300 group-hover/skill:scale-125">
+                  {skill.icon}
+                </span>
+
+                <p className="text-sm text-gray-300 transition-colors duration-300 group-hover/skill:text-white">
+                  {skill.name}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    ))}
+      ))}
+    </div>
   </div>
-</div></section>
+</section>
 </>
     )
 }

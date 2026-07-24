@@ -64,7 +64,7 @@ subtext:"linkedin.com/in/shrishti-gupta-584b82373",
     </div>
   </div>
 
-  <p className="mt-6 text-center text-sm text-gray-300">
+  <p className="mt-6 text-center text-sm text-emerald-300">
     Thanks for visiting my portfolio! 👋
   </p>
 

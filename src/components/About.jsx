@@ -1,45 +1,85 @@
-function About(){
+import {
+  FaCode,
+  FaServer,
+  FaBrain,
+  FaRocket,
+} from "react-icons/fa";
+
+function About() {
+  const aboutCards = [
+  {
+    id: 1,
+    icon: FaCode,
+    title: "Frontend Development",
+    description:
+      "Building responsive and interactive user interfaces using React, JavaScript, and Tailwind CSS with a focus on clean design and usability.",
+  },
+  {
+    id: 2,
+    icon: FaServer,
+    title: "Backend Journey",
+    description:
+      "Currently learning Node.js, Express, and MongoDB while expanding from frontend into full-stack development.",
+  },
+  {
+    id: 3,
+    icon: FaBrain,
+    title: "Problem Solving",
+    description:
+      "Strengthening algorithmic thinking through consistent DSA practice and writing clean, efficient solutions.",
+  },
+  {
+    id: 4,
+    icon: FaRocket,
+    title: "Project Based Learning",
+    description:
+      "Applying new concepts by building real-world projects that improve practical development skills and confidence.",
+  },
+];
+ 
     return(
         <>
-        <section id="about">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-slate-950 p-6 lg:px-12 ">
+        <section id="about"  >
+          <div className="grid grid-cols-1 gap-8    bg-slate-950 p-6 md:grid-cols-2 md:p-8">
             <section className="flex flex-col justify-center">
-<h1 className="text-3xl md:text-6xl font-bold text-gray-300 mb-6">About Me</h1>
-<p className="text-lg text-gray-200 mb-4"> I build responsive and interactive web applications for better user experience with 
-    an emphasis on clean code and intuitive design. I am a frontend developer focused on building meaningful
-    projects, learning new technologies and continously impoving through hands-on development and problem 
-    solving.
-</p>
- 
+              <p className="mb-4 w-fit rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-sm font-medium text-emerald-300">
+                About Me
+              </p>
+              <h1 className="mb-4 mt-2 text-4xl font-bold text-gray-200 md:text-4xl">
+                A clear focus on thoughtful web experiences
+              </h1>
+              <p className="text-base mt-2 leading-8 text-[16px] text-gray-300">
+                I build responsive and interactive web applications with a strong emphasis on clean code and intuitive design. I am a frontend developer focused on building meaningful projects, learning new technologies, and continuously improving through hands-on development and problem solving.
+              </p>
             </section>
-            <section className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-4 mt-8 lg:mt-0 lg:ml-8">
-<div className="bg-slate-900 px-10 py-5 rounded-lg  ">
-    <p className=" text-center  text-lg text-gray-300 mb-1">Frontend Developer </p>
-    <p className="text-sm text-center text-gray-400" >Building responsive and interactive user interfaces using React, JavaScript, and Tailwind CSS 
-        with a focus on clean design and usability.
-    </p>
-    </div>
-    
-<div className="bg-slate-900 p-4 rounded-lg    ">
- <p className="text-center  text-lg text-gray-300 mb-1"> Learning Backend Development </p>
-    <p className="text-sm text-center text-gray-400">Currently learning Node.js, Express, and databases
-        while expanding from frontend into full-stack development.
-    </p>
-</div>
-<div className="bg-slate-900 p-4 rounded-lg ">
-    <p className="text-center  text-lg text-gray-300 mb-1">Problem Solving </p>
-    <p className="text-sm text-center text-gray-400">Improving algorithmic thinking through consistent
-        DSA practice and writing efficient solutions.
-    </p>
-</div>
-<div className="bg-slate-900 p-4 rounded-lg   ">
-    <p className="text-center  text-lg text-gray-300 mb-1">Project Based Learning</p>
-    <p className="text-sm text-center text-gray-400">Building projects to apply new concepts,
-        strengthen practical skills, and gain hands-on development experience.
-    </p>
-</div>
-            </section>
+
+            <div className="grid gap-5 sm:grid-cols-2">
+              {aboutCards.map((card) => {
+                const Icon = card.icon;
+
+                return (
+                  <div
+                    key={card.id}
+                    className="group rounded-2xl border border-slate-800 bg-slate-900 p-4 transition-all duration-300 hover:-translate-y-1 hover:border-emerald-500"
+                  >
+                    <div className="mb-2 flex items-center gap-4">
+                     <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/ border border-emerald-500   ">
+          <Icon className="text-2xl text-emerald-400 transition-transform duration-300 group-hover:scale-125" />
         </div>
+                     <div> <h3 className="text-lg font-semibold text-gray-200">
+                        {card.title}
+                      </h3>
+                        <div className="mt-3 h-1 w-16 rounded-full bg-emerald-500 transition-all duration-300 group-hover:w-24"></div></div>
+                    </div>
+
+                    <p className="text-sm leading-7 text-gray-400">
+                      {card.description}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </section>
         </>
     )

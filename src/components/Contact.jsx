@@ -52,7 +52,7 @@ subtext:"linkedin.com/in/shrishti-gupta-584b82373",
       rel="noopener noreferrer"
       className="group flex items-center gap-4"
     >
-      <div className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full border-2 border-emerald-500 bg-slate-900 text-emerald-500 shadow-[0_0_18px_rgba(16,185,129,.35)] transition-all duration-300 group-hover:scale-110">
+      <div className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full border-2 border-emerald-500 bg-slate-900 text-emerald-500 shadow-[0_0_18px_rgba(16,185,129,.35)] transition-all duration-300 group-hover:scale-110 ">
         {item.icon}
       </div>
 
