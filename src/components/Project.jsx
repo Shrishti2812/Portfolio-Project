@@ -9,7 +9,7 @@ function Project() {
     image: "/images/shopsphere.png",
     description:
       "A modern e-commerce application featuring product search, category filtering, wishlist management, and cart functionality designed with a responsive user experience in mind.",
-    tech: ["React", "Tailwind CSS", "React Router", "Context API"],
+    tech: ["React", "Tailwind CSS", "React Router",  ],
     live: "https://e-commerce-project-chi-brown.vercel.app/",
     github: "https://github.com/Shrishti2812/E-commerce-Project.git",
   },
@@ -17,8 +17,7 @@ function Project() {
     title: "Smart Routine Tracker",
     image: "/images/routineplanner.png",
     description:
-      "A productivity-focused routine planner designed to help users organize daily tasks, categorize activities, set priorities, track progress, and build consistent habits with a clean and responsive interface.",
-    tech: ["React", "Tailwind CSS", "Local Storage"],
+      "A productivity dashboard that helps users organize daily tasks, set priorities, maintain streaks, track progress, and stay consistent through a clean, intuitive interface.",   tech: ["React", "Tailwind CSS", "Local Storage"],
     live: "https://smart-routine-tracker.vercel.app/",
     github: "https://github.com/Shrishti2812/Smart-Routine-Tracker.git",
   },
@@ -34,67 +33,117 @@ function Project() {
 ];
   return (
     <>
-    <section id="projects">
-      <div className="bg-slate-950 p-2 md:p-4">
-        <h1 className="text-5xl font-bold text-white mb-4 text-center">Things I've Built</h1>
-        <p className="text-center text-gray-400 mb-4">
-          From interactive user interfaces to real-world web applications, these projects
-          reflect my learning and development skills.
-        </p>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 bg-slate-950 p-6 lg:px-12 mx-auto">
-  {projects.map((project) => (
-    <div
-      key={project.title}
-      className="bg-slate-800 border border-slate-700 rounded-2xl overflow-hidden hover:border-emerald-500/40 hover:shadow-xl hover:shadow-emerald-500/10 transition-all duration-300 h-full flex flex-col"
-    >
-      <div className="h-56 overflow-hidden bg-slate-900">
-        <img
-          src={project.image}
-          alt={project.title}
-          className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-        />
-      </div>
+  <section
+  id="projects"
+  className="relative py-20 bg-slate-950 overflow-hidden"
+>
+  {/* Background Glow */}
+  <div className="bg-slate-950 p-2 md:p-4" />
 
-      <div className="p-3 md:p-5 flex flex-col flex-1">
-        <h2 className="text-xl md:text-2xl font-bold text-white">
-          {project.title}
-        </h2>
+  <div className="relative max-w-7xl mx-auto px-6">
 
-        <p className="text-slate-400 text-xs md:text-sm leading-4 mt-2">
-          {project.description}
-        </p>
+    {/* Heading */}
+    <div className="max-w-3xl mx-auto text-center mb-14">
+      <span className="inline-flex items-center rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-1 text-sm font-medium text-emerald-400">
+        Featured Projects
+      </span>
 
-        <div className="flex flex-wrap gap-1 md:gap-2 mt-4">
-          {project.tech.map((tech) => (
-            <span
-              key={tech}
-              className="px-2.5 py-1 text-xs rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400"
-            >
-              {tech}
-            </span>
-          ))}
-        </div>
+      <h1 className="mt-5 text-4xl md:text-5xl font-bold text-white">
+        Things I've Built
+      </h1>
 
-        <div className="flex gap-2 mt-auto pt-6">
-          <a
-            href={project.live}
-            className="flex-1 flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white py-2 rounded-lg text-sm font-medium transition-all duration-300"
-          >
-            Live Demo <HiOutlineExternalLink size={16} />
-          </a>
-
-          <a
-            href={project.github}
-            className="flex-1 flex items-center justify-center gap-2 border border-slate-600 hover:bg-slate-800 text-white py-2 rounded-lg text-sm font-medium transition-all duration-300"
-          >
-            GitHub <FaGithub size={16} />
-          </a>
-        </div>
-      </div>
+      <p className="mt-5 text-base md:text-lg text-slate-400 leading-8">
+        From interactive user interfaces to real-world web applications,
+        these projects showcase my experience with React, Tailwind CSS,
+        modern JavaScript, APIs and responsive design.
+      </p>
     </div>
-  ))}
-</div>
-      </div></section>
+
+    {/* Project Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+
+      {projects.map((project) => (
+
+        <div
+          key={project.title}
+          className="group flex flex-col overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/70 backdrop-blur-md transition-all duration-500 hover:-translate-y-2 hover:border-emerald-500/40 hover:shadow-2xl hover:shadow-emerald-500/10"
+        >
+
+          {/* Image */}
+          <div className="relative overflow-hidden">
+
+            <img
+              src={project.image}
+              alt={project.title}
+              className="h-60 w-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent" />
+
+          </div>
+
+          {/* Content */}
+          <div className="flex flex-1 flex-col p-6">
+
+            <h2 className="text-2xl font-bold text-white">
+              {project.title}
+            </h2>
+
+            <p className="mt-2 text-sm leading-6 text-slate-400">
+              {project.description}
+            </p>
+
+            {/* Tech Stack */}
+            <div className="mt-2 flex flex-wrap gap-2">
+
+              {project.tech.map((tech) => (
+
+                <span
+                  key={tech}
+                  className="rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-400 transition-all duration-300 group-hover:bg-emerald-500/20"
+                >
+                  {tech}
+                </span>
+
+              ))}
+
+            </div>
+
+            {/* Buttons */}
+            <div className="mt-auto flex gap-3 pt-8">
+
+              <a
+                href={project.live}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 flex items-center justify-center gap-2 rounded-xl bg-emerald-500 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-emerald-600 hover:shadow-lg hover:shadow-emerald-500/30"
+              >
+                Live Demo
+                <HiOutlineExternalLink size={17} />
+              </a>
+
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 flex items-center justify-center gap-2 rounded-xl border border-slate-700 bg-slate-900 text-sm font-semibold text-white transition-all duration-300 hover:border-slate-500 hover:bg-slate-800"
+              >
+                GitHub
+                <FaGithub size={17} />
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
+</section>
     </>
   );
 }

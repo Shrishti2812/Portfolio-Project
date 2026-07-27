@@ -58,7 +58,7 @@ function Navbar() {
                 key={link.name}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="rounded-xl px-3 py-2 text-center text-sm font-medium text-slate-300 transition hover:bg-slate-800 hover:text-emerald-400"
+                className="rounded-xl px-3 py-2 text-center text-sm font-medium text-slate-300 transition-all duration-300 hover:bg-slate-800 hover:text-emerald-400"
               >
                 {link.name}
               </a>

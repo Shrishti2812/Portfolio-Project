@@ -2,13 +2,8 @@ import { FaCode } from "react-icons/fa6"
 import { FaJava } from "react-icons/fa";
 import { FaLaptopCode } from "react-icons/fa";
 import {
-  SiJavascript,
-  SiTailwindcss,
-  SiNodedotjs,
-  SiExpress,
-  SiPostman,
-  SiMongodb,
-  SiCss,
+  SiJavascript, SiTailwindcss,
+  SiNodedotjs,SiMongodb, SiMongoose ,SiExpress, SiPostman,  SiCss,
   SiHtml5,
   SiReact,
   SiMysql,
@@ -55,8 +50,12 @@ const skillCategories = [
         icon: <SiExpress className="text-gray-200 text-2xl" />,
       },
       {
-        name: "MySQL",
-        icon: <SiMysql className="text-blue-500 text-2xl" />,
+        name: "MongoDB",
+        icon: <SiMongodb className="text-green-500 text-2xl" />,
+      },
+      {
+        name: "Mongoose",
+        icon:<SiMongoose className="text-2xl text-red-700  " />,
       },
       {
         name: "Postman",
