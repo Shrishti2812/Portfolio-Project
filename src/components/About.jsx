@@ -39,48 +39,71 @@ function About() {
  
     return(
         <>
-        <section id="about"  >
-          <div className="grid grid-cols-1 gap-8    bg-slate-950 p-6 md:grid-cols-2 md:p-8">
-            <section className="flex flex-col justify-center">
-              <p className="mb-4 w-fit rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-sm font-medium text-emerald-300">
-                About Me
-              </p>
-              <h1 className="mb-4 mt-2 text-4xl font-bold text-gray-200 md:text-4xl">
-                A clear focus on thoughtful web experiences
-              </h1>
-              <p className="text-base mt-2 leading-8 text-[16px] text-gray-300">
-                I build responsive and interactive web applications with a strong emphasis on clean code and intuitive design. I am a frontend developer focused on building meaningful projects, learning new technologies, and continuously improving through hands-on development and problem solving.
-              </p>
-            </section>
+       <section id="about">
+  <div className="grid grid-cols-1 gap-8 bg-slate-950 p-6 lg:grid-cols-2 lg:p-8">
 
-            <div className="grid gap-5 sm:grid-cols-2">
-              {aboutCards.map((card) => {
-                const Icon = card.icon;
+    {/* About Text */}
+    <section className="flex flex-col justify-center">
+      <p className="mb-4 w-fit rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-sm font-medium text-emerald-300">
+        About Me
+      </p>
+      <h1 className="mb-4 mt-2 text-3xl font-bold text-gray-200 sm:text-4xl">
+        A clear focus on thoughtful web experiences
+      </h1>
+      <p className="mt-2 text-[16px] leading-8 text-gray-300">
+        I build responsive and interactive web applications with a strong
+        emphasis on clean code and intuitive design. I am a frontend developer
+        focused on building meaningful projects, learning new technologies,
+        and continuously improving through hands-on development and problem
+        solving.
+      </p>
+    </section>
+       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+      {aboutCards.map((card) => {
+        const Icon = card.icon;
+        return (
+          <div
+            key={card.id}
+            className="
+              group rounded-2xl border border-slate-800  bg-slate-900 p-3 md:p-5 transition-all duration-300  hover:-translate-y-1    hover:border-emerald-500"       >
+           <div className="mb-3 flex items-center gap-4">
+              <div
+                className="
+                  flex h-10 w-10 items-center justify-center    rounded-xl border border-emerald-500  bg-emerald-500/20   sm:h-12 sm:w-12" >
+                <Icon
+                  className="
+                    text-xl text-emerald-400
+                    transition-transform duration-300
+                    group-hover:scale-125
+                  "
+                />
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-gray-200">{card.title}       </h3>
+                <div
+                  className="
+                    mt-3 h-1 w-16 rounded-full bg-emerald-500
+                    transition-all duration-300
+                    group-hover:w-24
+                  "
+                />
+              </div>
 
-                return (
-                  <div
-                    key={card.id}
-                    className="group rounded-2xl border border-slate-800 bg-slate-900 p-4 transition-all duration-300 hover:-translate-y-1 hover:border-emerald-500"
-                  >
-                    <div className="mb-2 flex items-center gap-4">
-                     <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/ border border-emerald-500   ">
-          <Icon className="text-2xl text-emerald-400 transition-transform duration-300 group-hover:scale-125" />
-        </div>
-                     <div> <h3 className="text-lg font-semibold text-gray-200">
-                        {card.title}
-                      </h3>
-                        <div className="mt-3 h-1 w-16 rounded-full bg-emerald-500 transition-all duration-300 group-hover:w-24"></div></div>
-                    </div>
-
-                    <p className="text-sm leading-7 text-gray-400">
-                      {card.description}
-                    </p>
-                  </div>
-                );
-              })}
             </div>
+
+
+            <p className="text-sm leading-7 text-gray-400">
+              {card.description}
+            </p>
+
           </div>
-        </section>
+        );
+      })}
+
+    </div>
+
+  </div>
+</section>
         </>
     )
 }

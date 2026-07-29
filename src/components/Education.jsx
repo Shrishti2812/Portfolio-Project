@@ -29,14 +29,14 @@ function Education(){
     return (
       <section id="education">
         <div className="bg-slate-950 p-6">
-            <h2 className="text-5xl font-bold text-white mb-4 text-center">Education and HighLights</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 text-center">Education and HighLights</h2>
           <p className=" text-gray-400 text-center">My academic background and coding journey so far.</p>
-      <div className="bg-slate-800 p-5 md:p-6 max-w-3xl mx-auto rounded-lg shadow-md mt-4 flex flex-col md:flex-row gap-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_25px_rgba(16,185,129,0.15)]">
+      <div className="bg-slate-800 p-3 md:p-6 max-w-3xl mx-auto rounded-lg shadow-md mt-2 flex flex-col md:flex-row gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_25px_rgba(16,185,129,0.15)]">
 
   {/* Icon */}
-  <div className="flex justify-center items-center px-6 py-4 border-b-2 md:border-b-0 md:border-r-2 border-gray-700">
+  <div className="flex justify-center items-center p-2 md:px-6 md:py-4 border-b-2 md:border-b-0 md:border-r-2 border-gray-700">
 
-    <div className="w-20 h-20 md:w-32 md:h-32 rounded-full bg-slate-900 border-2 border-emerald-500 flex items-center justify-center shadow-[0_0_25px_rgba(16,185,129,0.45)] hover:scale-110 hover:shadow-[0_0_35px_rgba(16,185,129,0.7)] transition-all duration-300">
+    <div className="w-18 h-18 md:w-32 md:h-32 rounded-full bg-slate-900 border-2 border-emerald-500 flex items-center justify-center shadow-[0_0_25px_rgba(16,185,129,0.45)] hover:scale-110 hover:shadow-[0_0_35px_rgba(16,185,129,0.7)] transition-all duration-300">
 
       <FaGraduationCap className="text-emerald-500 text-5xl md:text-7xl" />
 
@@ -60,7 +60,7 @@ function Education(){
     </p>
 
     {/* Bottom Info */}
-    <div className="flex justify-evenly items-center gap-5 mt-5">
+    <div className="flex justify-evenly items-center gap-5 mt-3 md:mt-5">
 
       {/* Duration */}
       <div className="flex items-center gap-2">
