@@ -102,7 +102,7 @@ const skillCategories = [
           key={category.title}
           className={`group bg-slate-900 p-3 sm:p-4 md:p-5 rounded-xl border border-slate-800 transition-all duration-300 hover:-translate-y-2 hover:border-emerald-400 hover:shadow-[0_0_25px_rgba(16,185,129,0.2)] ${
             index === skillCategories.length - 1
-              ? 'sm:col-span-2 sm:max-w-[calc(50%-0.75rem)] sm:mx-auto lg:col-span-1'
+              ? 'sm:col-span-2 sm:max-w-[calc(50%-0.75rem)] sm:mx-auto md:col-span-2 md:max-w-[calc(50%-0.75rem)] md:mx-auto lg:col-span-1 lg:max-w-none'
               : ''
           }`}
         >
@@ -121,7 +121,7 @@ const skillCategories = [
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-1 md:mt-3">
+          <div className="grid grid-cols-2 gap-3 mt-1 md:mt-3">
             {category.skills.map((skill) => (
               <div
                 key={skill.name}
