@@ -16,13 +16,13 @@
 
           <div className="mt-4 sm:mt-5 flex items-center gap-3">
             <div className="h-0.5 w-10 sm:w-12 bg-emerald-400"></div>
-            <h3 className="text-lg sm:text-2xl font-semibold text-white">Frontend Developer</h3>
+            <h3 className="text-lg sm:text-2xl font-semibold text-white">Full Stack Developer</h3>
           </div>
 
           <p className="mt-4 sm:mt-5 max-w-sm md:max-w-lg text-sm sm:text-lg leading-7 sm:leading-8 text-slate-400">
-            Building responsive and user-friendly web applications using React,
-            Tailwind CSS and modern JavaScript while exploring backend
-            development with Node.js.
+           Full Stack Developer building and deploying real-world applications with React, Node.js,
+           Express and MongoDB. Hands-on experience with authentication , REST APIs, database management,
+           e-commerce workflows and payment integration.
           </p>
 
           <div className="mt-6 sm:mt-8 flex flex-row gap-3   w-full sm:w-auto">
@@ -57,19 +57,20 @@
             </div>
 
             <div className="bg-slate-950/70 p-4 sm:p-5 font-mono text-[13px] sm:text-[14px] lg:text-[15px] leading-6 sm:leading-7 text-slate-300">
-              <p>
-                <span className="text-emerald-400">const</span>{" "}
-                <span className="text-sky-400">developer</span> = {"{"}
-              </p>
-              <p className="ml-5">name: <span className="text-amber-300">"Shrishti Gupta"</span>,</p>
-              <p className="ml-5">role: <span className="text-amber-300">"Frontend Developer"</span>,</p>
-              <p className="ml-5">frontend: <span className="text-amber-300">["React","Tailwind","JavaScript"]</span>,</p>
-              <p className="ml-5">backend: <span className="text-amber-300">"Node.js"</span>,</p>
-              <p className="ml-5">database: <span className="text-amber-300">"MongoDB"</span>,</p>
-              <p className="ml-5">currentlyLearning: <span className="text-amber-300">"Express.js"</span>,</p>
-              <p className="ml-5">openToWork: <span className="text-blue-400">true</span>,</p>
-              <p>{"};"}</p>
-            </div>
+  <p>
+    <span className="text-emerald-400">const</span>{" "}
+    <span className="text-sky-400">developer</span> = {"{"}
+  </p>
+  <p className="ml-5">name: <span className="text-amber-300">"Shrishti Gupta"</span>,</p>
+  <p className="ml-5">role: <span className="text-amber-300">"Full Stack Developer"</span>,</p>
+  <p className="ml-5">frontend: <span className="text-amber-300">["React","Tailwind","JavaScript"]</span>,</p>
+  <p className="ml-5">backend: <span className="text-amber-300">["Node.js","Express.js"]</span>,</p>
+  <p className="ml-5">database: <span className="text-amber-300">["MongoDB","Mongoose"]</span>,</p>
+  <p className="ml-5">experience: <span className="text-amber-300">["REST APIs","JWT","Razorpay"]</span>,</p>
+  <p className="ml-5">openToWork: <span className="text-blue-400">true</span>,</p>
+  <p>{"};"}</p>
+</div>
+
           </div>
         </section>
       </div>

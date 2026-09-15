@@ -1,31 +1,31 @@
 import { FaRegStar } from "react-icons/fa";
-import { FaRegCalendarDays } from "react-icons/fa6";
+import { FaRegCalendarDays,FaLaptopCode } from "react-icons/fa6";
 import { FaGraduationCap } from "react-icons/fa6";
-import { Monitor, Code2, Server,Award} from "lucide-react";
+import { Monitor, Code2, Server } from "lucide-react";
 
 function Education(){
-    const highlights = [
-        {
-            icon:<Monitor className="text-emerald-500 text-2xl"></Monitor>,
-            title:"Frontend Developer",
-            desc:"Built responsive react applications"   
-        },
-        {
-           icon:<Code2 className="text-emerald-500 text-2xl"></Code2>,
-            title:"DSA Progress",
-            desc:"400+ DSA problems solved"
-        },
-        {
-      icon:<Server className="text-emerald-500 text-2xl"></Server>,
-           title:"Currently Learning",
-            desc:"Node js,Express and MongoDB"
-        },
-        {
-            icon:<Award className="text-emerald-500 text-2xl"></Award>,
-            title:"Certification",
-            desc:"Introduction to Generative AI"
-        }
-    ]
+ const highlights = [
+  {
+    icon: <Code2 className="text-emerald-500 text-2xl" />,
+    title: "DSA Progress",
+    desc: "400+ DSA problems solved",
+  },
+  {
+    icon: <Monitor className="text-emerald-500 text-2xl" />,
+    title: "Frontend Development",
+    desc: "Built responsive React applications",
+  },
+  {
+    icon: <Server className="text-emerald-500 text-2xl" />,
+    title: "Backend & APIs",
+    desc: "Built REST APIs with Node.js and Express",
+  },
+  {
+    icon: <FaLaptopCode className="text-emerald-500 text-2xl" />,
+    title: "Full Stack Development",
+    desc: "Built and deployed full-stack web applications",
+  },
+];
     return (
       <section id="education">
         <div className="bg-slate-950 p-6">

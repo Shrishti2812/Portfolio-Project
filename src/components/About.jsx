@@ -17,24 +17,25 @@ function About() {
   {
     id: 2,
     icon: FaServer,
-    title: "Backend Journey",
+    title: "Backend Development",
     description:
-      "Currently learning Node.js, Express, and MongoDB while expanding from frontend into full-stack development.",
+      "Building backend functionality with Node.js and Express, including REST APIs, authentication, and application logic.",
+  },
+  {
+    id: 4,
+    icon: FaRocket,
+    title: "Real World Projects",
+    description:
+      "Bringing frontend, backend, databases, and external services together to build complete, functional web applications.",
   },
   {
     id: 3,
     icon: FaBrain,
     title: "Problem Solving",
     description:
-      "Strengthening algorithmic thinking through consistent DSA practice and writing clean, efficient solutions.",
+      "Approaching development problems logically through DSA practice, debugging, and breaking complex problems into smaller, manageable parts.",
   },
-  {
-    id: 4,
-    icon: FaRocket,
-    title: "Project Based Learning",
-    description:
-      "Applying new concepts by building real-world projects that improve practical development skills and confidence.",
-  },
+  
 ];
  
     return(
@@ -51,11 +52,11 @@ function About() {
         A clear focus on thoughtful web experiences
       </h1>
       <p className="mt-2 text-[16px] leading-8 text-gray-300">
-        I build responsive and interactive web applications with a strong
-        emphasis on clean code and intuitive design. I am a frontend developer
-        focused on building meaningful projects, learning new technologies,
-        and continuously improving through hands-on development and problem
-        solving.
+     Focused on building modern web applications that are both functional and easy to use.
+      Strong in frontend development with hands-on experience building the backend,
+       database, authentication, and other core features that turn a UI into a complete
+        application.
+
       </p>
     </section>
        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
