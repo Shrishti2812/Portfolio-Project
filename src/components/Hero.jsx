@@ -66,7 +66,7 @@
   <p className="ml-5">frontend: <span className="text-amber-300">["React","Tailwind","JavaScript"]</span>,</p>
   <p className="ml-5">backend: <span className="text-amber-300">["Node.js","Express.js"]</span>,</p>
   <p className="ml-5">database: <span className="text-amber-300">["MongoDB","Mongoose"]</span>,</p>
-  <p className="ml-5">experience: <span className="text-amber-300">["REST APIs","JWT","Razorpay"]</span>,</p>
+  <p className="ml-5">experience: <span className="text-amber-300">["REST APIs","JWT"]</span>,</p>
   <p className="ml-5">openToWork: <span className="text-blue-400">true</span>,</p>
   <p>{"};"}</p>
 </div>

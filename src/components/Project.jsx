@@ -8,16 +8,16 @@ function Project() {
       image: "/images/shopsphere.png",
       description:
         "ShopSphere is a full-stack e-commerce application where users can browse products, manage their cart and wishlist, place orders, and complete checkout with Razorpay test payments. Built with React, Node.js, Express, and MongoDB.",
-      tech: ["React", "Node.js", "Express.js", "MongoDB"],
+      tech: ["React", "Tailwind CSS", "Express.js", "MongoDB"],
       live: "https://e-commerce-project-chi-brown.vercel.app/",
       github: "https://github.com/Shrishti2812/E-commerce-Project.git",
     },
     {
-      title: "Smart Routine Tracker",
+      title: "Smart Routine Planner",
       image: "/images/routineplanner.png",
       description:
-        "Smart Routine Tracker is a productivity application where users can organize tasks, set priorities, track progress, and maintain streaks. Built with React and Tailwind CSS, with Local Storage for persistent routine data.",
-      tech: ["React", "Tailwind CSS", "JavaScript", "Local Storage"],
+"Smart Routine Planner helps users organize routines, track progress, and maintain streaks, with an AI Planner that analyzes their goals and suggests practical time adjustments. Built with React, Express, MongoDB, and Gemini API.",
+      tech: ["React", "Express", "MongoDB", "Gemini API"],
       live: "https://smart-routine-tracker.vercel.app/",
       github: "https://github.com/Shrishti2812/Smart-Routine-Tracker.git",
     },
